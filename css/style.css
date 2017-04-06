@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato|Pavanam|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*end CSS reset*/
+
+
+/* box model */
+.row, 
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
+
+/* header formatting*/
+
+header {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 105%;
+}
+
+header a {
+    float: left;
+}
+
+header a img {
+    width: 200px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 10px 0px 10px 40px;
+}
+
+/* footer*/
+footer {
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .813em;
+    text-align: center;
+    background-color: #ededed;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+nav {
+    float: left;
+    /*width: calc(100% - 200px);*/
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+nav {
+    float: right;
+    background-color: #ededed;
+}
+
+nav .nav {
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: black;
+    float: right;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    background-color: #A9A9A9;
+}
+
+img {
+    width: 100%;
+}
+
+#container {
+    width: 80%;
+    margin-left: 10%;
+    background:#efffdd;
+    overflow: auto;
+    max-height: 100vh;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    /*overflow: hidden;*/
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 50px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 16px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropbtn {
+    float: right;
+}
+
+.dropdown-content {
+    right: 0;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* styilng the welcome sign on the home page*/
+#welcome h1 {
+    text-align: center;
+    font-size: 300%;
+    margin: 12px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bold;
+}
+
+#home-welcome h1 {
+    text-align: center;
+    font-size: 300%;
+    margin: 12px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+}
+
+/* styling the slideshow on the home page*/
+#slideshow{
+        width: 100%;
+        position:relative;
+        margin: 10px auto;
+        display: block;
+    }
+
+#slideshow img {
+    width: 100%;
+}
+
+#slideshow ul{
+        width: 1025px;
+        height: 700px;
+        list-style:none outside none;
+        position:relative;
+        overflow:hidden;
+    }
+
+#slideshow li:first-child{
+        display:list-item;
+        position:absolute;
+    }
+
+#slideshow li{
+        position:absolute;
+        display:none;
+    }
+      
+#slideshow .prevButton{
+        height:72px;
+        width:68px;
+        position:absolute;
+        background:url('../images/buttons.png') no-repeat;
+        top:50%;
+        margin-top:-36px;
+        cursor:pointer;
+        z-index:2000;
+        background-position:left top;
+        left:0
+    }
+
+    #slideshow .prevButton:hover{ 
+            background-position:left bottom;left:0;}
+
+#slideshow .nextButton{
+    height:72px;
+    width:68px;
+    position:absolute;
+    background:url('../images/buttons.png') no-repeat;
+    top:50%;
+    margin-top:-36px;
+    cursor:pointer;
+    z-index:2000;
+    background-position:right top;
+    right:0
+}
+
+#slideshow .nextButton:hover{background-position:right bottom;right:0;}
+
+/* styling the about us section on index.html*/
+
+#about-us {
+    padding: 1% 2% 2% 2%;
+    margin: 5%;
+    line-height: 150%;
+}
+
+#about-us {
+    box-sizing: border-box;
+}
+
+article h2 {
+    font-size: 140%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+article img {
+    width: 5%;
+}
+
+/* styling the stay in touch part on index.html*/
+#socialmedia h2 {
+    padding: 1% 2% 2% 2%;
+    margin: 5%;
+}
+
+/* styling the menu page*/
+#tortevideo {
+    padding: 2%;
+}
+
+#tortetext {
+    background-color: #fefff9;
+    padding: 10px;
+    margin: 0px 30px 10px -15px;
+}
+
+#tortetext h3 {
+    display: inline-block;
+    font-size: 150%;
+}
+
+#tortetext p {
+    display: inline-block;
+    font-style: italic;
+}
+
+#tortetext #last {
+    display: inline-block;
+    font-style: normal;
+}
+
+#otherdesserts ol {
+    margin-left: 15px;
+}
+
+#otherdesserts {
+    line-height: 125%;
+    display: inline-block;
+    background-color: #fefff9;
+    padding: 10px;
+    margin: 10px 30px 20px -15px;
+}
+
+/* styling the contact form*/
+form {
+    width: 75%;
+    margin: 15px auto 0px auto;
+    border: 2px solid #000000;
+    padding: 14px;
+    margin-bottom: 50px;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* styling the contact page (table with locations)*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 50px 10px;
+}
+
+table #tabletitle {
+    font-size: 275%;
+}
+
+table img {
+    width: 85px;
+    height: 85px;
+}
+
+table p {
+    margin-bottom: 5px;
+    line-height: 125%;
+}
+
+table iframe {
+    margin: 10px 0px;
+}
+
+#graph-description {
+    display: block;
+    margin: 15px;
+    margin-top: 23px;
+}
+
+#graph1 {
+    width: 80%;
+    margin: 15px auto;
+    margin-bottom: 25px;
+}
+
+/* celebrations page tabs*/
+
+.tabcontent p, h3{
+    display: block;
+    margin: 10px ;
+    line-height: 150%;
+}
+
+.tablinks {
+    font-family: "Montserrat", sans-serif;
+}
+
+.imgs {
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    margin: 0px 8px 10px 8px;
+}
+
+.imgs2 {
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    margin: 0px 11px 10px 11px;
+}
+
+#img-gallery {
+    display: inline-block;
+    position: relative;
+    width: 90%
+    margin: auto auto auto 15px;
+}
+
+#img-gallery h3 {
+    margin: 10px 0px 8px 16px;
+
+}
+
+#img-gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 12px;
+}
+
+/* links in header*/
+#links {
+    display: block;
+    position: relative;
+    float: right;
+}
+
+#links img {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    margin: 35px 15px 0px 0px;
+}
+
+#alternate-slideshow {
+    display: none;
+}
+
+/* mobile responsiveness for phones*/
+@media screen and (max-width: 450px) {  
+
+    #links img {
+        display: none;
+    }
+
+    #img-container {
+        margin-left: -20px;
+    }
+
+    #slideshow {
+        display: none;
+    }
+
+    #alternate-slideshow {
+        display: block;
+        margin: 0px 0px 5px 10px;
+    }
+
+    #alternate-slideshow img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+
+

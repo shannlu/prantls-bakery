@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta name="author" content="Shannon Lu">
+    <meta name="keywords" content="Prantl's Bakery Contact">
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/scripts.js"></script> 
+<!--     <script>
+        function validate(){
+            var zip = $("#zipcode").val();
+            if (isNaN(zip)) {
+                alert("Zip code is not valid. Please enter a new zip code");
+                return false;
+        }}
+    </script> -->
+
+    <title>Prantl's Bakery Contact</title>
+</head>
+
+<body>
+    <header>
+        <div id="img-container"><a href="index.html"><img src="images/logo2.png" alt="logo"></a></div>
+        <div id="links">
+        <a href="https://www.facebook.com/PrantlsBakery/" target="_blank"><img src="images/facebook.png"></a>
+        <a href="https://twitter.com/prantlsbakery?lang=en" target="_blank"><img src="images/twitter.png"></a>
+        <a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png"></a>
+        <a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" target="_blank"><img src="images/yelp.png"></a>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <div class="nav" class="dropdown">Contact</div>
+                    <ul class="dropdown-content">
+                        <li><a href="contact.html">Visit</a></li>
+                        <li><a href="contactform.html">Inquiries</a></li>
+                    </ul> 
+            </div>
+            <a href="internaldata.html" class="nav">Internal Data</a>
+            <a href="celebrations.html" class="nav">Celebrations</a>
+            <a href="menu.html" class="nav">Menu</a>
+            <a href="index.html" class="nav">Home</a>
+        </nav> 
+    </header>
+
+    <div id="container">
+     <div id="welcome">
+        <h1>Questions or Comments?</h1>
+    </div>
+    
+    <form onsubmit="return validate()" action="mailto:infoneeded@prantlsbakery.com">
+            <fieldset>
+                <label>Name: *</label></br>
+                <input type="text" name="name" size="20" maxlength="250" placeholder="Your Name" required><br><br>
+
+                <label>Zip Code:</label></br>
+                <input id= "zipcode" type="text" name="zip code" size="20" minlength="5" maxlength="5" placeholder="#####"><br><br>
+
+                <label>Email Address: *</label></br>
+                <input id= "email" type="email" name="email" maxlength="250" placeholder="name@example.com" required><br><br>
+
+                <label>Message: *</label></br>
+                <textarea rows="10" cols="118" maxlength="1000" required></textarea><br><br>
+
+                <label>Please indicate if you want to subscribe to our mailing list</label></br>
+                <input type="checkbox" value="yes">Yes, I'd like to subscribe!<br><br>
+            </fieldset>
+
+            <fieldset>
+            <input type="submit" src="images/submit.png" height="40" width="80" alt="Submit">
+            </fieldset>
+    </form>
+
+    </div>
+
+    <footer>
+        &copy; Prantl's Bakery 2017<br/>
+    </footer>
+</body>
+
+</html>
